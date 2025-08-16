@@ -1,6 +1,6 @@
 # TkAccessory
 TkAccessory provides you best modules to customize your gui in python
 
-![Progress Style]()
+![Progress Style](TkToolsProgress.png)
 
-![Loading Style]()
+![Loading Style](TkToolsLoading.png)
