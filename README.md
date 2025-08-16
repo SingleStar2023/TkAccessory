@@ -1,6 +1,7 @@
 # TkAccessory
 TkAccessory provides you best modules to customize your gui in python
 
+`pip install TkAccessory`
 
 ## Progress style 
 
