@@ -1,17 +1,7 @@
-# TkAccessory
-TkAccessory provides you best modules to customize your gui in python
-
-`pip install TkAccessory`
-
-## Progress style 
-
-Customize your own progress style
-
-![Progress Style](TkToolsProgress.png)
-
-
-## Loading style
+## Loading styles
 
 Customize your own loading style
 
-![Loading Style](TkToolsLoading.png)
+![Loading Style 1](TkToolsLoading.gif)
+
+![Loading Style 2](TKToolsLoading2.gif)
