@@ -1,7 +1,7 @@
 ### Samples
-[## Progress samples](https://github.com/SingleStar2023/TkAccessory/tree/progress-samples)
+[*Progress samples*](https://github.com/SingleStar2023/TkAccessory/tree/progress-samples)
 
-[## Loading samples](https://github.com/SingleStar2023/TkAccessory/tree/loading-samples)
+[*Loading samples*](https://github.com/SingleStar2023/TkAccessory/tree/loading-samples)
 
 # TkAccessory
 TkAccessory provides you best modules to customize your gui in python
