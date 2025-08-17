@@ -25,7 +25,7 @@ def change():
     window.after(70,lambda : change())
 
 window = tk.CTk()
-window.title('TkTools')
+window.title('TkAccessory')
 window.configure(fg_color="black")
 window.resizable(False,False)
 window.geometry('500x500')
@@ -33,17 +33,17 @@ window.geometry('500x500')
 canvas = tk.CTkCanvas(window,width=400,height=400,bg="black",highlightthickness=0)
 canvas.place(x=250,y=250,anchor="center")
 
-progress1 = TkAtomicLoading(canvas,1,(80,80),100,10,bg_color="black",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10)
-progress2 = TkAtomicLoading(canvas,2,(200,80),100,10,bg_color="black",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_colors=["#ff0000","#ff0000","#fa4646","#fa4646","#ff7a7a","#ff7a7a"])
-progress3 = TkAtomicLoading(canvas,3,(320,80),100,10,bg_color="black",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_colors=["#00ff08","#00ff08","#42ff49","#42ff49","#81f785","#81f785"])
+progress1 = TkAtomicLoading(canvas,1,(80,80),100,bg_color="black",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_radiuses=[10 for _ in range(6)])
+progress2 = TkAtomicLoading(canvas,2,(200,80),100,bg_color="black",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_colors=["#ff0000","#ff0000","#fa4646","#fa4646","#ff7a7a","#ff7a7a"],loading_radiuses=[10 for _ in range(6)])
+progress3 = TkAtomicLoading(canvas,3,(320,80),100,bg_color="black",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_colors=["#00ff08","#00ff08","#42ff49","#42ff49","#81f785","#81f785"],loading_radiuses=[10 for _ in range(6)])
 
-progress4 = TkAtomicLoading(canvas,4,(80,200),100,10,bg_color="blue",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10)
-progress5 = TkAtomicLoading(canvas,5,(200,200),100,10,bg_color="red",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_colors=["#ff0000","#ff0000","#fa4646","#fa4646","#ff7a7a","#ff7a7a"])
-progress6 = TkAtomicLoading(canvas,6,(320,200),100,10,bg_color="green",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_colors=["#00ff08","#00ff08","#42ff49","#42ff49","#81f785","#81f785"])
+progress4 = TkAtomicLoading(canvas,4,(80,200),100,bg_color="blue",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_radiuses=[10 for _ in range(6)])
+progress5 = TkAtomicLoading(canvas,5,(200,200),100,bg_color="red",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_colors=["#ff0000","#ff0000","#fa4646","#fa4646","#ff7a7a","#ff7a7a"],loading_radiuses=[10 for _ in range(6)])
+progress6 = TkAtomicLoading(canvas,6,(320,200),100,bg_color="green",text=loading_text,text_font=("Aria",10,"bold"),text_angle=10,text_color="white",speed=10,loading_colors=["#00ff08","#00ff08","#42ff49","#42ff49","#81f785","#81f785"],loading_radiuses=[10 for _ in range(6)])
 
-progress7 = TkAtomicLoading(canvas,7,(80,320),50,20,bg_color="white",text="",speed=10)
-progress8 = TkAtomicLoading(canvas,8,(200,320),50,20,bg_color="white",text="",speed=10,loading_colors=["#ff0000","#ff0000","#fa4646","#fa4646","#ff7a7a","#ff7a7a"])
-progress9 = TkAtomicLoading(canvas,9,(320,320),50,20,bg_color="white",text="",speed=10,loading_colors=["#00ff08","#00ff08","#42ff49","#42ff49","#81f785","#81f785"])
+progress7 = TkAtomicLoading(canvas,7,(80,320),50,bg_color="white",text="",speed=10,loading_radiuses=[15 for _ in range(6)])
+progress8 = TkAtomicLoading(canvas,8,(200,320),50,bg_color="white",text="",speed=10,loading_colors=["#ff0000","#ff0000","#fa4646","#fa4646","#ff7a7a","#ff7a7a"],loading_radiuses=[15 for _ in range(6)])
+progress9 = TkAtomicLoading(canvas,9,(320,320),50,bg_color="white",text="",speed=10,loading_colors=["#00ff08","#00ff08","#42ff49","#42ff49","#81f785","#81f785"],loading_radiuses=[15 for _ in range(6)])
 
 window.after(50,lambda : change())
 
