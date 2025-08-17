@@ -1,4 +1,4 @@
-## Progress style 
+## Progress styles
 
 Customize your own progress style
 
